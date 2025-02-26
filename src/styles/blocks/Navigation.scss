@@ -1,0 +1,39 @@
+@use '@/styles/helpers' as *;
+
+.navigation-wrapper {
+  width: 100%;
+  max-width: 1256px;
+  margin: auto;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  @include flex-row-center();
+  justify-content: space-between;
+
+  button {
+    padding-block: 12px;
+    padding-inline: 34px;
+  }
+
+  &__phone, &__logo {
+    color: var(--color-gold);
+  }
+
+  &__phone {
+    text-decoration: underline;
+  }
+}
+
+.navigation {
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: fluid(47,1);
+    padding-inline: fluid(80,1)
+  }
+
+  &__element--active {
+    color: var(--color-gold);
+  }
+}

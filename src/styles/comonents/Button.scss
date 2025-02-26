@@ -1,0 +1,28 @@
+.button {
+
+  border: none;
+  background: none;
+  color: inherit;
+  border-radius: 2px;
+  padding-inline: 42px;
+  padding-block: 17px;
+  text-transform: uppercase;
+  line-height: 1.2;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:not([type="submit"]) {
+    font-style: italic;
+  }
+
+  &--solid {
+    @extend .button;
+    background-color: var(--color-gold);
+  }
+
+  &--hollow {
+    @extend .button;
+  }
+}

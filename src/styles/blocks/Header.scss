@@ -1,0 +1,9 @@
+@use '@/styles/helpers' as *;
+@use 'navigation';
+
+header {
+  background-color: var(--color-dark);
+  height: fluid(83,57);
+  display: flex;
+}
+
