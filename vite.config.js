@@ -1,0 +1,29 @@
+import { defineConfig } from 'vite'
+import { fileURLToPath } from 'node:url'
+import autoprefixer from 'autoprefixer'
+import postcssPxToRem from "postcss-pxtorem";
+import path from 'node:path';
+
+export default defineConfig({
+    css: {
+        postcss: {
+            plugins: [
+                autoprefixer,
+                postcssPxToRem
+            ],
+        },
+        preprocessorOptions: {
+            scss: {
+                additionalData: `@use "${path.resolve(__dirname, './src/styles/helpers')}" as *;`
+            }
+        }
+    },
+    resolve: {
+        alias: [
+            {
+                find: '@',
+                replacement: fileURLToPath(new URL('./src', import.meta.url))
+            },
+        ]
+    }
+})
