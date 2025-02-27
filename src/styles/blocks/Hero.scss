@@ -1,0 +1,79 @@
+@use 'Header' as *;
+@use '../helpers' as *;
+
+.hero {
+  width: $full-width;
+  height: fluid(707,476);
+  position: relative;
+  color: var(--color-white);
+  white-space: nowrap;
+  @include flex-center();
+
+  &__background, &__overlay, &__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__background {
+    background: url('@images/hero-bg.jpg') 50%/cover;
+  }
+
+  &__overlay {
+    background-color: var(--color-dark) ;
+    opacity: 70%;
+  }
+
+  &__content {
+    max-width: 1263px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__header {
+    font-family: var(--font-family-serif);
+    color: white;
+    max-width: 550px;
+
+    & span {
+      color: var(--color-gold);
+    }
+  }
+
+  &__subtitle {
+    max-width: 550px;
+    line-height: 163.7%;
+    text-wrap: pretty;
+    font-size: fluid(22,14);
+    color: var(--color-white);
+    margin-block: fluid(19,16);
+  }
+
+  &__button-wrapper {
+
+    display: flex;
+    flex-direction: row;
+
+    @include mobile-s {
+      flex-direction: column;
+    }
+
+    button {
+      width: 207px;
+      height: 51px;
+      @include mobile-s-above {
+        &:first-of-type {
+          margin-right: 20px;
+        }
+      }
+
+      @include mobile-s {
+        width: 100%;
+        &:first-of-type {
+          margin-bottom: 26px;
+        }
+      }
+  }
+  }
+}

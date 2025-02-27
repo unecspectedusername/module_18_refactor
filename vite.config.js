@@ -19,11 +19,12 @@ export default defineConfig({
         }
     },
     resolve: {
-        alias: [
-            {
-                find: '@',
-                replacement: fileURLToPath(new URL('./src', import.meta.url))
-            },
-        ]
+        alias: {
+            '@': path.resolve(__dirname, './src'),
+            '@images': path.resolve(__dirname, './src/assets/images'),
+            '@fonts': path.resolve(__dirname, './src/assets/fonts'),
+            '@blocks': path.resolve(__dirname, './src/styles/blocks'),
+            '@components': path.resolve(__dirname, './src/styles/components')
+        }
     }
 })

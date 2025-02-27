@@ -4,6 +4,8 @@
 @use 'utils';
 @use 'variables';
 
-@use 'blocks/header';
+@use 'comonents/Button';
 
-@use 'comonents/button';
+@use 'blocks/Header';
+@use 'blocks/Hero';
+@use 'blocks/Projects';

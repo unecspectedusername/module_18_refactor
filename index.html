@@ -9,26 +9,101 @@
     <link rel="stylesheet" href="./src/styles/main.scss">
 </head>
 <body>
-    <main>
+<main>
 
-        <header class="header">
-            <div class="navigation-wrapper">
-                <span class="navigation-wrapper__logo">IC "Repair Design Project"</span>
-                <nav class="navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__element--active">Home</li>
-                        <li class="navigation__element">Projects</li>
-                        <li class="navigation__element">Measurement</li>
-                        <li class="navigation__element">Team</li>
-                        <li class="navigation__element">Reviews</li>
-                        <li class="navigation__element">Contacts</li>
-                    </ul>
-                </nav>
-                <span class="navigation-wrapper__phone">+7 (928) 768-32-39</span>
-                <button class="button--solid" type="button">Request a call</button>
+    <header class="header">
+        <div class="navigation-wrapper">
+            <span class="navigation-wrapper__logo">IC "Repair Design Project"</span>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__element--active">Home</li>
+                    <li class="navigation__element">Projects</li>
+                    <li class="navigation__element">Measurement</li>
+                    <li class="navigation__element">Team</li>
+                    <li class="navigation__element">Reviews</li>
+                    <li class="navigation__element">Contacts</li>
+                </ul>
+            </nav>
+            <span class="navigation-wrapper__phone">+7 (928) 768-32-39</span>
+            <button class="button--solid" type="button">Request a call</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__background"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content container">
+            <h1 class="hero__header" data-text="Rostov-on-Don">Turnkey Repair in the<br>city of
+                <span>Rostov-on-Don</span></h1>
+            <p class="hero__subtitle">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20%
+                from cost of materials due to the organization of work</p>
+            <div class="hero__button-wrapper">
+                <button class="button--solid">Calculate the cost</button>
+                <button class="button--hollow">Submit your application</button>
             </div>
-        </header>
+        </div>
+    </section>
 
-    </main>
+    <section class="projects">
+        <div class="projects__wrapper container">
+
+            <div class="projects__description">
+                <h2 class="projects__header">Completed projects</h2>
+                <p class="projects__subtitle">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+            </div>
+
+            <div class="projects__properties properties">
+                <div class="properties__card">
+                    <h3 class="properties__header">City:</h3>
+                    <span class="properties__description">Rostov-on-Don
+                        LCD admiral</span>
+                </div>
+                <div class="properties__card">
+                    <h3 class="properties__header">Apartment area:</h3>
+                    <span class="properties__description">81 m2</span>
+                </div>
+                <div class="properties__card">
+                    <h3 class="properties__header">Repair time:</h3>
+                    <span class="properties__description">3.5 months</span>
+                </div>
+                <div class="properties__card">
+                    <h3 class="properties__header">Repair Cost:</h3>
+                    <span class="properties__description">Upon request</span>
+                </div>
+            </div>
+
+            <div class="projects__pagination pagination">
+                <div class="pagination__inner">
+                    <div class="pagination__arrow"></div>
+                    <div class="pagination__bullet--active"></div>
+                    <div class="pagination__bullet"></div>
+                    <div class="pagination__bullet"></div>
+                    <div class="pagination__arrow"></div>
+                </div>
+            </div>
+
+            <div class="projects__media">
+                <ul class="projects__list">
+                    <li class="projects__list-element--active">
+                        <a href="#" class="projects__link">Rostov-on-Don, Admiral</a>
+                    </li>
+                    <li class="projects__list-element--inactive">
+                        <a href="#" class="projects__link">Sochi Thieves</a>
+                    </li>
+                    <li class="projects__list-element--inactive">
+                        <a href="#" class="projects__link">Rostov-on-Don Patriotic</a>
+                    </li>
+                </ul>
+
+                <div class="projects__photo">
+                    <button class="button projects__photo-pagination"></button>
+                    <button class="button projects__photo-pagination"></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
 </body>
 </html>

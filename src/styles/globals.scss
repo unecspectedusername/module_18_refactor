@@ -6,6 +6,7 @@ body {
   flex-direction: column;
   font-family: var(--font-family-main);
   background-color: var(--color-white);
+  width: $full-width;
 }
 
 main {
@@ -17,14 +18,18 @@ h2,
 h3 {
   text-transform: uppercase;
   font-family: var(--font-family-serif);
+  font-weight: normal;
 }
 
 h1 {
   @include fluid-text(40, 23);
+  line-height: 132.8%;
 }
 
 h2 {
-  @include fluid-text(27, 22)
+  @include fluid-text(27, 22);
+  color: var(--color-gold);
+  font-family: var(--font-family-serif);
 }
 
 h3 {
@@ -37,4 +42,9 @@ a {
   &[class] {
     text-decoration: none;
   }
+}
+
+.container {
+  padding-inline: 18px;
+  margin: 0 auto;
 }

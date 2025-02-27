@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Nunito Sans';
-  src: url("../fonts/NunitoSans-Regular.woff2") format('woff2');
+  src: url("@fonts/NunitoSans-Regular.woff2") format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Nunito Sans';
-  src: url("../fonts/NunitoSans-Italic.woff2") format('woff2');
+  src: url("@fonts/NunitoSans-Italic.woff2") format('woff2');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'YesevaOne';
-  src: url("../fonts/YesevaOne-Regular.woff2") format('woff2');
+  src: url("@fonts/YesevaOne-Regular.woff2") format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;

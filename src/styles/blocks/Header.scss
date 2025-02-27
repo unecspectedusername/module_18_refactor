@@ -1,9 +1,12 @@
 @use '@/styles/helpers' as *;
-@use 'navigation';
+@use '@/styles/comonents/Navigation';
+
+$header-height: fluid(83,57);
 
 header {
   background-color: var(--color-dark);
-  height: fluid(83,57);
+  height: $header-height;
   display: flex;
+  justify-content: center;
+  white-space: nowrap;
 }
-
