@@ -1,0 +1,15 @@
+@use '../helpers' as *;
+
+.checkbox {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--color-black);
+  border-radius: 1px;
+  aspect-ratio: 1;
+
+  &:checked {
+    background: url("@icons/checkbox.svg") 50% / cover;
+    border: none;
+  }
+}

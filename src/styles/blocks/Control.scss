@@ -1,0 +1,138 @@
+@use '../helpers' as *;
+@use '../comonents/Section-heading';
+@use '../comonents/Video';
+@use '../comonents/HairLine';
+@use '../comonents/Form';
+@use '../comonents/Input';
+@use '../comonents/Checkbox';
+@use '../comonents/Button';
+@use 'sass:math';
+
+.control {
+
+  position: relative;
+  padding-inline: 18px;
+
+  @include flex-center();
+
+  &__wrapper {
+    @include flex-center();
+    flex-direction: column;
+    max-width: 817px;
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: 33%;
+      background-color: var(--color-dark);
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+    }
+  }
+
+  &__header {
+    color: var(--color-white);
+  }
+
+  .video {
+    margin-bottom: fluid(62, 28);
+  }
+
+  .hairline {
+    width: 55px;
+    margin-bottom: fluid(34, 21);
+  }
+
+  &__text {
+    color: var(--color-black);
+    font-size: fluid(18, 11);
+    text-align: center;
+    padding-inline: 10%;
+    line-height: 205%;
+    margin-bottom: fluid(90, 60);
+  }
+}
+
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 49px;
+  color: var(--color-black);
+
+  &__submit-button {
+    width: 231px;
+    height: 51px;
+    color: var(--color-white);
+  }
+
+  &__checkbox-wrapper {
+    flex-grow: 3;
+  }
+
+  &__checkbox-label {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+@include mobile {
+
+  .control {
+
+    &__text {
+      color: var(--color-white);
+    }
+
+    &__wrapper:after {
+      height: 80%;
+    }
+
+  }
+
+  .form {
+
+    flex-flow: column nowrap;
+    width: 100%;
+    color: var(--color-white);
+
+    &__input-wrapper, &__submit-button, {
+      width: 100%;
+    }
+
+    &__input, &__checkbox-wrapper, &__checkbox-label {
+      max-width: 100%;
+    }
+
+    &__input {
+      border-bottom: 1px solid var(--color-white);
+    }
+
+    &__checkbox-wrapper {
+      justify-content: start;
+    }
+
+    &__checkbox-label {
+      max-width: 80%;
+      color: var(--color-black);
+    }
+
+    &__submit-button {
+      position: relative;
+
+      &:after {
+        content: '';
+        width: calc(100% + calc($container-inline-padding * 2));
+        height: 300%;
+        background-color: var(--color-dark);
+        position: absolute;
+        left: -$container-inline-padding;
+        bottom: #{math.div(49, 2)}px;
+        z-index: -1;
+      }
+    }
+  }
+
+}
+

@@ -1,0 +1,19 @@
+@use '../helpers' as *;
+
+.video {
+
+  position: relative;
+  width: 100%;
+  max-width: 817px;
+  aspect-ratio: 1.88;
+
+  & * {
+    @include absolute-center();
+  }
+
+  &__play-button {
+    @include perfect-circle(fluid(85,34));
+    background: url('@icons/play.svg') 50% / cover;
+  }
+
+}

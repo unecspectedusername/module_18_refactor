@@ -37,6 +37,13 @@ label {
   cursor: pointer;
 }
 
+button {
+  border: none;
+  &:focus-visible {
+    outline: none;
+  }
+}
+
 input,
 textarea,
 select,

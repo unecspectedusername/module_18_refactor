@@ -1,0 +1,12 @@
+@use '../helpers' as *;
+
+
+.section-heading-block {
+  @include flex-center();
+  gap: 8px;
+  margin-block: fluid(12,20) fluid(40,30);
+
+  &__line {
+    width: 32px;
+  }
+}

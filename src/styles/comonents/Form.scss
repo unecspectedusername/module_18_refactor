@@ -1,0 +1,28 @@
+@use '../helpers' as *;
+
+.form {
+
+  &__input-wrapper, &__checkbox-wrapper {
+    display: flex;
+  }
+
+  &__input-wrapper {
+    flex-direction: column;
+  }
+
+  &__checkbox-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__input-label {
+    opacity: 50%;
+    font-size: 13px;
+  }
+
+  &__checkbox-label {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+
+}

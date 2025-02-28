@@ -2,8 +2,7 @@
 
 .projects {
     background-color: var(--color-dark);
-    padding-top: 107px;
-    padding-bottom: 415px;
+    padding-block: 107px;
 
     &__wrapper {
         max-width: 1171px;
@@ -90,9 +89,8 @@
     }
 
     &__photo-pagination {
-        background: url("@images/arrow-button.svg") 50%/cover;
-        width: 34px;
-        height: 34px;
+        background: url("@icons/arrow-button.svg") 50%/cover;
+        @include perfect-circle(34px);
         position: absolute;
         top: 50%;
 
@@ -185,7 +183,7 @@
     }
 
     &__arrow {
-        background: url("@images/pagination-arrow.svg") 50%/cover;
+        background: url("@icons/pagination-arrow.svg") 50%/cover;
         width: 41px;
         height: 13px;
 
@@ -195,9 +193,7 @@
     }
 
     &__bullet {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
+        @include perfect-circle(10px);
         background-color: var(--color-white);
         opacity: 30%;
 
@@ -205,6 +201,5 @@
             @extend .pagination__bullet;
             opacity: 100%;
         }
-
     }
 }

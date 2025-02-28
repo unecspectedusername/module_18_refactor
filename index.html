@@ -31,7 +31,7 @@
 
     <section class="hero">
         <div class="hero__background"></div>
-        <div class="hero__overlay"></div>
+        <div class="hero__overlay overlay"></div>
         <div class="hero__content container">
             <h1 class="hero__header" data-text="Rostov-on-Don">Turnkey Repair in the<br>city of
                 <span>Rostov-on-Don</span></h1>
@@ -49,7 +49,8 @@
 
             <div class="projects__description">
                 <h2 class="projects__header">Completed projects</h2>
-                <p class="projects__subtitle">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
+                <p class="projects__subtitle">Only a small part of the work performed by our company is presented on the
+                    site. For 14 years on in the construction market we have made happy more than 1000 families</p>
             </div>
 
             <div class="projects__properties properties">
@@ -102,6 +103,70 @@
             </div>
 
         </div>
+    </section>
+
+    <section class="control">
+
+        <div class="control__wrapper">
+
+            <h3 class="control__header">Online control</h3>
+
+            <div class="control__heading section-heading-block">
+                <hr class="section-header__line hairline">
+                <img
+                        class="section-header__icon"
+                        src="./src/assets/icons/online-control-icon.svg"
+                        alt="Online control"
+                        width="33" height="28" loading="lazy"
+                />
+                <hr class="section-header__line hairline">
+            </div>
+
+            <div class="video">
+                <img
+                        class="video__picture"
+                        src="./src/assets/images/video.jpg"
+                        alt="Видео"
+                        width="817" height="434" loading="lazy"
+                />
+                <div class="video__overlay overlay"></div>
+                <button class="video__play-button"></button>
+            </div>
+
+            <hr class="hairline">
+
+            <p class="control__text">
+                At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time,
+                you can go to our website and monitor the progress of work in your apartment. You can watch the live
+                broadcast from one of our facilities!
+                Leave a request below and you will receive a link to the broadcast.
+            </p>
+
+            <form action="#" class="control__form form">
+
+                <div class="form__input-wrapper">
+                    <label class="form__input-label" for="name">Name</label>
+                    <input class="form__input input" id="name" name="name" type="text" placeholder="What is your name:">
+                </div>
+
+                <div class="form__input-wrapper">
+                    <label class="form__input-label" for="phone">Phone</label>
+                    <input class="form__input input" id="phone" name="phone" type="tel"
+                           placeholder="Your phone number:">
+                </div>
+
+                <button class="form__submit-button button--solid" type="submit">Submit</button>
+
+                <div class="form__checkbox-wrapper">
+                    <input id="personal-data" type="checkbox" class="form__checkbox checkbox" name="personal-data">
+                    <label class="form__checkbox-label" for="personal-data">I agree to the processing of personal
+                        data</label>
+                </div>
+
+            </form>
+
+        </div>
+
     </section>
 
 </main>

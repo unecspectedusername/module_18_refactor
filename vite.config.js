@@ -22,6 +22,7 @@ export default defineConfig({
         alias: {
             '@': path.resolve(__dirname, './src'),
             '@images': path.resolve(__dirname, './src/assets/images'),
+            '@icons': path.resolve(__dirname, './src/assets/icons'),
             '@fonts': path.resolve(__dirname, './src/assets/fonts'),
             '@blocks': path.resolve(__dirname, './src/styles/blocks'),
             '@components': path.resolve(__dirname, './src/styles/components')

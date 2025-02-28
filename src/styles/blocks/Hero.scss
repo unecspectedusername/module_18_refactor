@@ -19,11 +19,6 @@
     background: url('@images/hero-bg.jpg') 50%/cover;
   }
 
-  &__overlay {
-    background-color: var(--color-dark) ;
-    opacity: 70%;
-  }
-
   &__content {
     max-width: 1263px;
     display: flex;
