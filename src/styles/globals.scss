@@ -17,6 +17,13 @@ h1,
 h2,
 h3 {
   text-transform: uppercase;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-family-serif);
   font-weight: normal;
 }
@@ -36,6 +43,10 @@ h3 {
   @include fluid-text(18, 14)
 }
 
+h4 {
+  @include fluid-text(18, 15)
+}
+
 a {
   color: inherit;
 
@@ -45,7 +56,7 @@ a {
 }
 
 .container {
-  padding-inline: 18px;
+  padding-inline: $container-inline-padding;
   margin: 0 auto;
 }
 

@@ -11,7 +11,8 @@
 .control {
 
   position: relative;
-  padding-inline: 18px;
+  margin-bottom: fluid(140, 60);
+  overflow: hidden;
 
   @include flex-center();
 
@@ -20,15 +21,15 @@
     flex-direction: column;
     max-width: 817px;
 
-    &:after {
-      content: '';
-      width: 100%;
-      height: 33%;
-      background-color: var(--color-dark);
-      position: absolute;
-      inset: 0;
-      z-index: -1;
-    }
+    //&:after {
+    //  content: '';
+    //  width: 100%;
+    //  height: 27%;
+    //  background-color: var(--color-dark);
+    //  position: absolute;
+    //  inset: 0;
+    //  z-index: -1;
+    //}
   }
 
   &__header {
@@ -39,7 +40,7 @@
     margin-bottom: fluid(62, 28);
   }
 
-  .hairline {
+  &__divider {
     width: 55px;
     margin-bottom: fluid(34, 21);
   }
@@ -61,13 +62,19 @@
   gap: 49px;
   color: var(--color-black);
 
+  &__input-wrapper {
+    order: 0;
+  }
+
   &__submit-button {
+    order: 1;
     width: 231px;
     height: 51px;
     color: var(--color-white);
   }
 
   &__checkbox-wrapper {
+    order: 2;
     flex-grow: 3;
   }
 
@@ -77,62 +84,84 @@
   }
 }
 
-@include mobile {
-
-  .control {
-
-    &__text {
-      color: var(--color-white);
+  @include mobile-above {
+    .video:after {
+      content: '';
+      width: 100vw;
+      left: 50%;
+      height: 100%;
+      background-color: var(--color-dark);
+      position: absolute;
+      transform: translate(-50%, -50%);
+      z-index: -1;
     }
-
-    &__wrapper:after {
-      height: 80%;
-    }
-
   }
 
-  .form {
 
-    flex-flow: column nowrap;
-    width: 100%;
-    color: var(--color-white);
+  @include mobile {
 
-    &__input-wrapper, &__submit-button, {
+    .control {
+
+      background-color: var(--color-dark);
+      &__text {
+        color: var(--color-white);
+      }
+
+      &__wrapper:after {
+        height: 90%;
+      }
+    }
+
+    .form {
+      flex-flow: column nowrap;
       width: 100%;
-    }
+      color: var(--color-white);
+      z-index: 1;
 
-    &__input, &__checkbox-wrapper, &__checkbox-label {
-      max-width: 100%;
-    }
+      &__input-wrapper, &__submit-button, {
+        width: 100%;
+      }
 
-    &__input {
-      border-bottom: 1px solid var(--color-white);
-    }
+      &__input, &__checkbox-wrapper, &__checkbox-label {
+        max-width: 100%;
+      }
 
-    &__checkbox-wrapper {
-      justify-content: start;
-    }
+      &__input {
+        border-bottom: 1px solid var(--color-white);
+      }
 
-    &__checkbox-label {
-      max-width: 80%;
-      color: var(--color-black);
-    }
+      &__submit-button {
+        order: 2;
+      }
 
-    &__submit-button {
-      position: relative;
+      &__checkbox-wrapper {
+        order: 1;
+        justify-content: start;
+      }
 
-      &:after {
-        content: '';
-        width: calc(100% + calc($container-inline-padding * 2));
-        height: 300%;
-        background-color: var(--color-dark);
-        position: absolute;
-        left: -$container-inline-padding;
-        bottom: #{math.div(49, 2)}px;
-        z-index: -1;
+      &__checkbox-label {
+        max-width: 80%;
+      }
+
+      &__checkbox {
+        border: 1px solid var(--color-white);
+      }
+
+      &__submit-button {
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          width: 100vw;
+          height: 100%;
+          left: 50%;
+          top: 0;
+          transform: translate(-50%, 50%);;
+          background-color: var(--color-white);
+        }
       }
     }
   }
-
-}
 

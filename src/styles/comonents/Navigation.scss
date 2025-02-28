@@ -3,7 +3,7 @@
 .navigation-wrapper {
   width: 100%;
   max-width: 1256px;
-  margin: auto 18px;
+  margin: auto $container-inline-padding;
   font-size: 11px;
   text-transform: uppercase;
   color: var(--color-white);
