@@ -1,0 +1,84 @@
+@use '../helpers' as *;
+
+.fantasies {
+  position: relative;
+
+  &__wrapper {
+    @include flex-center();
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 18px;
+    padding-inline: 18px;
+  }
+}
+
+.fantasies-background {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+  width: 100%;
+  height: 87%;
+  z-index: -1;
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    background: no-repeat url("@images/fantasies_background.jpg") 50% / cover;
+  }
+
+  &__overlay {
+    @include absolute-center;
+    opacity: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.9) 100%);
+  }
+}
+
+.fantasies-styles {
+  max-width: 441px;
+
+  &__header {
+    max-width: 380px;
+    margin-bottom: 47px;
+  }
+
+  &__list {
+    color: var(--color-white);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  &__list-element {
+
+    &--selected {
+      color: var(--color-gold);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 8px;
+    }
+  }
+}
+
+.fantasies-gallery {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 1100px;
+  gap: 39px 43px;
+
+  &__image {
+
+  }
+
+  &__image:first-child {
+    margin-top: 60px;
+  }
+}
+
+@include tablet {
+  .fantasies {
+    @include visually-hidden();
+  }
+}
