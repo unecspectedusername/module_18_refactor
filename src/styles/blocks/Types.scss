@@ -1,6 +1,7 @@
 @use '../helpers' as *;
 @use '../comonents/Section-heading';
 @use '../comonents/HairLine';
+@use '../comonents/Cards';
 
 .types {
 
@@ -26,42 +27,6 @@
     width: 100%;
     max-width: 1236px;
     gap: $container-inline-padding;
-  }
-}
-
-.card {
-  position: relative;
-
-  &__info {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    background-color: var(--color-white);
-    padding: 32px 26px 60px 36px;
-    border: 1px solid black;
-  }
-
-  &__info-list {
-    list-style: inside;
-    color: var(--color-grey);
-    font-size: 13px;
-    line-height: 204.6%;
-    padding-top: fluid(13,10);
-  }
-
-  &__price {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transform: translate(0, 50%);
-    padding-inline: fluid(22,16);
-    padding-block: fluid(17,12);
-    font-family: var(--font-family-serif);
-    color: var(--color-white);
-    background: var(--color-gold);
-    text-align: center;
-    text-transform: uppercase;
   }
 }
 

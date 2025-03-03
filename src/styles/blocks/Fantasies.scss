@@ -62,7 +62,7 @@
   }
 }
 
-.fantasies-gallery {
+.fantasies-gallery-desktop {
   display: flex;
   flex-flow: column wrap;
   max-height: 1100px;
@@ -77,8 +77,41 @@
   }
 }
 
-@include tablet {
-  .fantasies {
+.fantasies-gallery-mobile {
+  background: no-repeat url("@images/fantasies_background.jpg") 50% / cover;
+  width: 100%;
+  aspect-ratio: 1.4;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 55%;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 91%);;
+    background-color: var(--color-dark);
+  }
+}
+
+@include tablet-above {
+  .photo-pagination, .fantasies-gallery-mobile {
     @include visually-hidden();
+  }
+}
+
+@include tablet {
+  .fantasies-background, .fantasies-styles__list, .fantasies-gallery-desktop {
+    @include visually-hidden();
+  }
+
+  .fantasies__wrapper {
+      flex-direction: column;
+  }
+
+  .fantasies-styles__header {
+    text-align: center;
   }
 }

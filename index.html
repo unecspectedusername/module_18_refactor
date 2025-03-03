@@ -97,8 +97,8 @@
                 </ul>
 
                 <div class="projects__photo">
-                    <button class="button projects__photo-pagination"></button>
-                    <button class="button projects__photo-pagination"></button>
+                    <button class="button photo-pagination"></button>
+                    <button class="button photo-pagination"></button>
                 </div>
             </div>
 
@@ -197,17 +197,19 @@
                             width="392" height="421" loading="lazy"
                     />
                     <div class="card__info">
-                        <h4 class="card__info-header">Redecorating</h4>
-                        <ul class="card__info-list">
-                            <li class="card__info-list-element">Dismantling of old coatings</li>
-                            <li class="card__info-list-element">Wallpapering</li>
-                            <li class="card__info-list-element">Painting walls and ceilings</li>
-                            <li class="card__info-list-element">Laying flooring</li>
-                            <li class="card__info-list-element">Replacing plumbing</li>
-                            <li class="card__info-list-element">Replacing sockets and switches</li>
-                            <li class="card__info-list-element">Replacing doors</li>
+                        <h4 class="card__header">Redecorating</h4>
+                        <ul class="card__list">
+                            <li class="card__list-element">Dismantling of old coatings</li>
+                            <li class="card__list-element">Wallpapering</li>
+                            <li class="card__list-element">Painting walls and ceilings</li>
+                            <li class="card__list-element">Laying flooring</li>
+                            <li class="card__list-element">Replacing plumbing</li>
+                            <li class="card__list-element">Replacing sockets and switches</li>
+                            <li class="card__list-element">Replacing doors</li>
                         </ul>
-                        <div class="card__price">from 900 rub / m2</div>
+                        <div class="card__label-wrapper">
+                            <div class="card__label">from 900 rub / m2</div>
+                        </div>
                     </div>
 
 
@@ -222,17 +224,19 @@
                             width="392" height="421" loading="lazy"
                     />
                     <div class="card__info">
-                        <h4 class="card__info-header">Overhaul</h4>
-                        <ul class="card__info-list">
-                            <li class="card__info-list-element">Dismantling of old coatings</li>
-                            <li class="card__info-list-element">Wallpapering</li>
-                            <li class="card__info-list-element">Painting walls and ceilings</li>
-                            <li class="card__info-list-element">Laying flooring</li>
-                            <li class="card__info-list-element">Replacing plumbing</li>
-                            <li class="card__info-list-element">Replacing sockets and switches</li>
-                            <li class="card__info-list-element">Replacing doors</li>
+                        <h4 class="card__header">Overhaul</h4>
+                        <ul class="card__list">
+                            <li class="card__list-element">Dismantling of old coatings</li>
+                            <li class="card__list-element">Wallpapering</li>
+                            <li class="card__list-element">Painting walls and ceilings</li>
+                            <li class="card__list-element">Laying flooring</li>
+                            <li class="card__list-element">Replacing plumbing</li>
+                            <li class="card__list-element">Replacing sockets and switches</li>
+                            <li class="card__list-element">Replacing doors</li>
                         </ul>
-                        <div class="card__price">from 1800 rub / m2</div>
+                        <div class="card__label-wrapper">
+                            <div class="card__label">from 1800 rub / m2</div>
+                        </div>
                     </div>
                 </div>
 
@@ -245,17 +249,19 @@
                             width="392" height="421" loading="lazy"
                     />
                     <div class="card__info">
-                        <h4 class="card__info-header">Designer Repair</h4>
-                        <ul class="card__info-list">
-                            <li class="card__info-list-element">Dismantling of old coatings</li>
-                            <li class="card__info-list-element">Wallpapering</li>
-                            <li class="card__info-list-element">Painting walls and ceilings</li>
-                            <li class="card__info-list-element">Laying flooring</li>
-                            <li class="card__info-list-element">Replacing plumbing</li>
-                            <li class="card__info-list-element">Replacing sockets and switches</li>
-                            <li class="card__info-list-element">Replacing doors</li>
+                        <h4 class="card__header">Designer Repair</h4>
+                        <ul class="card__list">
+                            <li class="card__list-element">Dismantling of old coatings</li>
+                            <li class="card__list-element">Wallpapering</li>
+                            <li class="card__list-element">Painting walls and ceilings</li>
+                            <li class="card__list-element">Laying flooring</li>
+                            <li class="card__list-element">Replacing plumbing</li>
+                            <li class="card__list-element">Replacing sockets and switches</li>
+                            <li class="card__list-element">Replacing doors</li>
                         </ul>
-                        <div class="card__price">from 4000 rub / m2</div>
+                        <div class="card__label-wrapper">
+                            <div class="card__label">from 4000 rub / m2</div>
+                        </div>
                     </div>
                 </div>
 
@@ -360,7 +366,7 @@
             <div class="fantasies-background__overlay overlay"></div>
         </div>
 
-        <div class="fantasies__wrapper">
+        <div class="fantasies__wrapper container">
 
             <div class="fantasies-styles">
                 <h2 class="fantasies-styles__header">We realize your
@@ -380,7 +386,12 @@
                 </ul>
             </div>
 
-            <div class="fantasies-gallery">
+            <div class="fantasies-gallery-mobile">
+                <button class="button photo-pagination"></button>
+                <button class="button photo-pagination"></button>
+            </div>
+
+            <div class="fantasies-gallery-desktop">
 <!--                <div class="fantasies-gallery__left-side">-->
                     <img
                             class="fantasies-gallery__image"
@@ -411,6 +422,135 @@
                     />
 <!--                </div>-->
             </div>
+        </div>
+
+    </section>
+
+    <section class="clients">
+
+        <div class="clients__background">
+            <div class="clients__background-image"></div>
+            <div class="clients__background-image"></div>
+        </div>
+
+        <div class="clients__wrapper container">
+
+            <h3 class="clients__header">Our clients</h3>
+
+            <div class="clients__heading section-heading-block">
+                <hr class="section-heading-block__line hairline">
+                <img
+                        class="section-heading-block__icon"
+                        src="./src/assets/icons/clients-icon.svg"
+                        alt="Our clients"
+                        width="33" height="28" loading="lazy"
+                />
+                <hr class="section-heading-block__line hairline">
+            </div>
+
+            <p class="clients__annotation">
+                80% of our customers recommend us to their friends and family.
+            </p>
+
+            <div class="clients__cards">
+                <div class="card">
+                    <div class="card__info">
+                        <div class="card__header-wrapper">
+                            <div class="card__client-photo"></div>
+                            <h4 class="card__header">Fedosova Maria Konstantinovna</h4>
+                        </div>
+                        <div class="card__text">
+                            <p>I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project</p>
+                            <p>to Georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
+                        </div>
+                        <div class="card__label-wrapper">
+                            <div class="card__label">
+                                <img
+                                        class=""
+                                        src="./src/assets/icons/measure.svg"
+                                        alt="Measurement"
+                                        width="32" height="32" loading="lazy"
+                                />
+                                <span>48 m2</span>
+                            </div>
+                            <div class="card__label">
+                                <img
+                                        class=""
+                                        src="./src/assets/icons/calend.svg"
+                                        alt="Measurement"
+                                        width="32" height="32" loading="lazy"
+                                />
+                                <span>40 DAYS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__info">
+                        <div class="card__header-wrapper">
+                            <div class="card__client-photo"></div>
+                            <h4 class="card__header">Afanasyev Sergey Alexandrovich</h4>
+                        </div>
+                        <div class="card__text">
+                            <p>I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project to Georgia for its professionalism and approach.</p>
+                            <p>The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
+                        </div>
+                        <div class="card__label-wrapper">
+                            <div class="card__label">
+                                <img
+                                        class=""
+                                        src="./src/assets/icons/measure.svg"
+                                        alt="Measurement"
+                                        width="32" height="32" loading="lazy"
+                                />
+                                <span>90 m2</span>
+                            </div>
+                            <div class="card__label">
+                                <img
+                                        class=""
+                                        src="./src/assets/icons/calend.svg"
+                                        alt="Measurement"
+                                        width="32" height="32" loading="lazy"
+                                />
+                                <span>128 DAYS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__info">
+                        <div class="card__header-wrapper">
+                            <div class="card__client-photo"></div>
+                            <h4 class="card__header">Kiriev Egor Leonidovich</h4>
+                        </div>
+                        <div class="card__text">
+                            <p>I want to thank the guys for their work. We put your shower part in repair. I am very grateful that I referred to the repair as to my own. Great thanks I express the project</p>
+                            <p>to Georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated. Team mobile and professional. Works performed qualitatively without comments. Quality satisfied. Prices democratic. I recommend these masters.</p>
+                        </div>
+                        <div class="card__label-wrapper">
+                            <div class="card__label">
+                                <img
+                                    class=""
+                                    src="./src/assets/icons/measure.svg"
+                                    alt="Measurement"
+                                    width="32" height="32" loading="lazy"
+                                />
+                                <span>56 m2</span>
+                            </div>
+                            <div class="card__label">
+                                <img
+                                        class=""
+                                        src="./src/assets/icons/calend.svg"
+                                        alt="Measurement"
+                                        width="32" height="32" loading="lazy"
+                                />
+                                <span>86 DAYS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </section>

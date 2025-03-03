@@ -1,4 +1,5 @@
 @use '../helpers' as *;
+@use '../comonents/Photo-pagination';
 
 .projects {
     background-color: var(--color-dark);
@@ -86,23 +87,6 @@
         height: 100%;
         background: url("@images/project-photo.jpg") 50%/cover;
         position: relative;
-    }
-
-    &__photo-pagination {
-        background: url("@icons/arrow-button.svg") 50%/cover;
-        @include perfect-circle(34px);
-        position: absolute;
-        top: 50%;
-
-        &:first-child {
-            left: 14px;
-            transform: translate(0, -50%) rotate(180deg);
-        }
-
-        &:last-child {
-            right: 14px;
-            transform: translate(0, -50%);
-        }
     }
 }
 
