@@ -1,0 +1,133 @@
+@use '../helpers' as *;
+@use '../comonents/Button';
+@use '../comonents/Form';
+
+.request {
+  background: no-repeat url("@images/request_background.jpg") -10%;
+  padding-top: 104px;
+  padding-bottom: 54px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1236px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    column-gap: 206px;
+  }
+
+  &__steps, &__form {
+    width: 100%;
+  }
+
+  &__steps {
+    max-width: 379px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  &__step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  &__step-number {
+    @include perfect-circle(42px);
+    box-sizing: content-box;
+    line-height: 42px;
+    text-align: center;
+    aspect-ratio: 1;
+    background-color: var(--color-gold);
+    border: 8px solid var(--color-white);
+    font-family: var(--font-family-serif);
+    font-size: 18px;
+    color: var(--color-white);
+
+  }
+
+  .form {
+    @include flex-center();
+    flex-direction: column;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding-inline: 49px;
+    padding-block: 28px;
+    max-width: 506px;
+
+    &__header {
+      font-size: 18px;
+      line-height: 143.2%;
+      max-width: 60%;
+      text-align: center;
+    }
+
+    &__input-wrapper, &__input {
+      width: 100%;
+    }
+
+    &__input-wrapper:nth-of-type(2) {
+      margin-top: 38px;
+    }
+
+    &__input-wrapper:not(:nth-of-type(2)) {
+      margin-top: 48px;
+    }
+
+    &__input {
+
+      color: var(--color-white);
+
+      &::placeholder {
+        color: var(--color-white);
+      }
+    }
+
+    &__checkbox-wrapper {
+      margin-top: 16px;
+      align-self: flex-start;
+    }
+
+    &__submit-button {
+      width: 213px;
+      height: 51px;
+      margin-top: 39px;
+      align-self: flex-end;
+    }
+
+    .piggy-bank {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      max-width: 441px;
+      column-gap: 25px;
+      position: absolute;
+      bottom: -50px;
+      color: var(--color-gold);
+
+      &__text {
+        max-width: 250px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .request {
+    @include visually-hidden();
+  }
+}

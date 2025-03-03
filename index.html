@@ -142,7 +142,7 @@
                 Leave a request below and you will receive a link to the broadcast.
             </p>
 
-            <form action="#" class="control__form form">
+            <form action="#" class="control__form form" method="post">
 
                 <div class="form__input-wrapper">
                     <label class="form__input-label" for="name">Name</label>
@@ -159,8 +159,7 @@
 
                 <div class="form__checkbox-wrapper">
                     <input id="personal-data" type="checkbox" class="form__checkbox checkbox" name="personal-data">
-                    <label class="form__checkbox-label" for="personal-data">I agree to the processing of personal
-                        data</label>
+                    <label class="form__checkbox-label" for="personal-data">I agree to the processing of personal data</label>
                 </div>
 
             </form>
@@ -265,7 +264,88 @@
 
     </section>
 
-    <p>test</p>
+    <section class="request">
+
+        <div class="request__wrapper">
+
+            <div class="request__steps">
+                <div class="request__step">
+                    <div class="request__step-number">
+                        01
+                    </div>
+                    <div class="request__step-description">
+                        Our specialist will arrive for measurements per day
+                        contact, or appoint a date convenient for you
+                    </div>
+                </div>
+                <div class="request__step">
+                    <div class="request__step-number">
+                        02
+                    </div>
+                    <div class="request__step-description">
+                        Free metering
+                    </div>
+                </div>
+                <div class="request__step">
+                    <div class="request__step-number">
+                        03
+                    </div>
+                    <div class="request__step-description">
+                        Free consultation
+                    </div>
+                </div>
+                <div class="request__step">
+                    <div class="request__step-number">
+                        04
+                    </div>
+                    <div class="request__step-description">
+                        Get a cost estimate and
+                        the timing of your future repairs
+                    </div>
+                </div>
+            </div>
+
+            <form action="#" class="request__form form" method="post">
+                <div class="form__header">
+                    Leave a request for free departure of the measurer
+                </div>
+                <div class="form__input-wrapper">
+                    <label class="form__input-label" for="name_from_request_form">Name</label>
+                    <input class="form__input input" id="name_from_request_form" name="name" type="text" placeholder="What is your name:">
+                </div>
+                <div class="form__input-wrapper">
+                    <label class="form__input-label" for="phone_from_request_form">Name</label>
+                    <input class="form__input input" id="phone_from_request_form" name="phone" type="text" placeholder="Your phone number:">
+                </div>
+                <div class="form__input-wrapper">
+                    <label class="form__input-label" for="email_from_request_form">Name</label>
+                    <input class="form__input input" id="email_from_request_form" name="email" type="text" placeholder="Your email">
+                </div>
+                <div class="form__checkbox-wrapper">
+                    <input id="personal-data_from_request_form" type="checkbox" class="form__checkbox checkbox" name="personal-data">
+                    <label class="form__checkbox-label" for="personal-data_from_request_form">I agree to the processing of personal data</label>
+                </div>
+                <button class="form__submit-button button--solid" type="submit">Submit</button>
+
+                <div class="piggy-bank">
+                    <img
+                            class="piggy-bank__image"
+                            src="./src/assets/icons/piggy-bank.svg"
+                            alt="Piggy bank"
+                            width="72" height="72" loading="lazy"
+                    />
+
+                    <div class="piggy-bank__text">
+                        Help save 10 - 20% of the
+                        cost of materials
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
 
 
 </main>
