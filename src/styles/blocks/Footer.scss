@@ -1,0 +1,18 @@
+@use '@/styles/helpers' as *;
+@use '@/styles/comonents/Navigation';
+
+$header-height: fluid(83,57);
+
+footer {
+  background-color: var(--color-dark);
+  height: 133px;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+@include tablet {
+  footer {
+    @include visually-hidden();
+  }
+}

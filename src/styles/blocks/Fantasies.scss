@@ -2,6 +2,7 @@
 
 .fantasies {
   position: relative;
+  overflow: hidden;
 
   &__wrapper {
     @include flex-center();

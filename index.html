@@ -428,11 +428,6 @@
 
     <section class="clients">
 
-        <div class="clients__background">
-            <div class="clients__background-image"></div>
-            <div class="clients__background-image"></div>
-        </div>
-
         <div class="clients__wrapper container">
 
             <h3 class="clients__header">Our clients</h3>
@@ -555,6 +550,83 @@
 
     </section>
 
+    <section class="questions">
+        <div class="questions__top-section">
+            <div class="questions__top-background"></div>
+            <div class="questions__top-background"></div>
+        </div>
+        <div class="questions__bottom-section container">
+
+            <div class="questions__bottom-section-background"></div>
+            <div class="questions__bottom-section-overlay"></div>
+
+            <div class="questions__form-wrapper">
+
+                <form action="#" class="questions__form form" method="post">
+
+                    <h3 class="form__header">Have any questions?</h3>
+                    <div class="form__input-wrapper inline">
+                        <label class="form__input-label" for="questions_name">Name</label>
+                        <input class="form__input input" id="questions_name" name="name" type="text" placeholder="What is your name:">
+                    </div>
+
+                    <div class="form__input-wrapper inline">
+                        <label class="form__input-label" for="questions_phone">Phone</label>
+                        <input class="form__input input" id="questions_phone" name="phone" type="tel"
+                               placeholder="Your phone number:">
+                    </div>
+
+                    <div class="form__input-wrapper">
+                        <label class="form__input-label" for="questions_question">Question</label>
+                        <input class="form__input input" id="questions_question" name="question" type="text"
+                               placeholder="I want to know:">
+                    </div>
+
+                    <div class="form__checkbox-wrapper">
+                        <input id="questions_personal-data" type="checkbox" class="form__checkbox checkbox" name="personal-data">
+                        <label class="form__checkbox-label" for="questions_personal-data">I agree to the processing of personal
+                            data</label>
+                    </div>
+
+                    <button class="form__submit-button button--solid" type="submit">Submit</button>
+
+                </form>
+
+            </div>
+
+            <h3 class="questions__header">
+                Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
+            </h3>
+
+            <div class="social-links">
+                <a class="social-links__email" href="mailto:example@email.ru"></a>
+                <a class="social-links__instagram" href="https://instagram.com/"></a>
+            </div>
+
+            <div class="map-container">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A497bcc52df4fe0eebd58814057c86885d8ec6ec8ef2cee7b4a7df0cc1f60ca07&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="navigation-wrapper">
+            <span class="navigation-wrapper__logo">IC "Repair Design Project"</span>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__element--active">Home</li>
+                    <li class="navigation__element">Projects</li>
+                    <li class="navigation__element">Measurement</li>
+                    <li class="navigation__element">Team</li>
+                    <li class="navigation__element">Reviews</li>
+                    <li class="navigation__element">Contacts</li>
+                </ul>
+            </nav>
+            <span class="navigation-wrapper__phone">+7 (928) 768-32-39</span>
+            <button class="button--solid" type="button">Request a call</button>
+        </div>
+    </footer>
 
 </main>
 </body>

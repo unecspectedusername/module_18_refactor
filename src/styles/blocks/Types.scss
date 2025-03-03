@@ -6,7 +6,11 @@
 .types {
 
   @include flex-center();
-  margin-bottom: fluid(300, 150);
+  margin-bottom: fluid(300, 55);
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
 
   &__wrapper {
 
