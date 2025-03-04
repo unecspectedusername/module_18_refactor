@@ -17,16 +17,3 @@ export default ({ env }) => {
         plugins,
     }
 }
-
-// export default () => {
-//     const plugins = [
-//         postcssPxToRem({
-//             propList: ['*'],
-//             mediaQuery: true,
-//         })
-//     ]
-//
-//     return {
-//         plugins,
-//     }
-// }
