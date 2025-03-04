@@ -10,6 +10,7 @@
     width: 80%;
     background-color: var(--color-white);
     padding: 32px 26px 60px 36px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 3%);
   }
 
   &__header-wrapper {
@@ -39,6 +40,7 @@
     display: flex;
     flex-flow: row nowrap;
     gap: 1px;
+    box-shadow: 5px 5px 10px 0 rgba(var(--color-gold-rgb), 30%);
   }
 
   &__label {
@@ -49,5 +51,13 @@
     background: var(--color-gold);
     text-align: center;
     text-transform: uppercase;
+  }
+}
+
+@include tablet {
+  .card {
+    &__info {
+      box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 5%);
+    }
   }
 }

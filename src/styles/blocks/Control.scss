@@ -75,15 +75,24 @@
 }
 
   @include mobile-above {
-    .video:after {
-      content: '';
-      width: 100vw;
-      left: 50%;
-      height: 100%;
-      background-color: var(--color-dark);
-      position: absolute;
-      transform: translate(-50%, -50%);
-      z-index: -1;
+
+    .video {
+      box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 15%);
+
+      &:after {
+        content: '';
+        width: 100vw;
+        left: 50%;
+        height: 100%;
+        background-color: var(--color-dark);
+        position: absolute;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+    }
+
+    .form__submit-button {
+      box-shadow: 0 15px 15px 0 rgba(var(--color-gold-rgb), 15%);
     }
   }
 

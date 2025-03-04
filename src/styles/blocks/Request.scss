@@ -67,6 +67,7 @@
     padding-inline: 49px;
     padding-block: 28px;
     max-width: 506px;
+    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 5%);
 
     &__header {
       font-size: 18px;
@@ -106,6 +107,7 @@
       height: 51px;
       margin-top: 39px;
       align-self: flex-end;
+      box-shadow: 0 5px 15px 0 rgba(var(--color-gold-rgb), 30%);
     }
 
     .piggy-bank {
