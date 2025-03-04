@@ -5,9 +5,10 @@
   overflow: hidden;
 
   &__wrapper {
-    @include flex-center();
-    flex-direction: row;
+    display: flex;
+    align-items: center;
     justify-content: space-evenly;
+    flex-direction: row;
     column-gap: 18px;
     padding-inline: 18px;
   }
