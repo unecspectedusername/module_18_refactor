@@ -17,15 +17,15 @@
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__element--active">Home</li>
-                    <li class="navigation__element">Projects</li>
-                    <li class="navigation__element">Measurement</li>
-                    <li class="navigation__element">Team</li>
-                    <li class="navigation__element">Reviews</li>
-                    <li class="navigation__element">Contacts</li>
+                    <li class="navigation__element hover">Projects</li>
+                    <li class="navigation__element hover">Measurement</li>
+                    <li class="navigation__element hover">Team</li>
+                    <li class="navigation__element hover">Reviews</li>
+                    <li class="navigation__element hover">Contacts</li>
                 </ul>
             </nav>
-            <span class="navigation-wrapper__phone">+7 (928) 768-32-39</span>
-            <button class="button--solid" type="button">Request a call</button>
+            <a href="tel:+79287683239" class="navigation-wrapper__phone hover">+7 (928) 768-32-39</a>
+            <button class="button--solid hover" type="button">Request a call</button>
         </div>
     </header>
 
@@ -38,8 +38,8 @@
             <p class="hero__subtitle">Get ready-made turnkey repairs on time with work time saving up to 45 days and 20%
                 from cost of materials due to the organization of work</p>
             <div class="hero__button-wrapper">
-                <button class="button--solid">Calculate the cost</button>
-                <button class="button--hollow">Submit your application</button>
+                <button class="button--solid hover">Calculate the cost</button>
+                <button class="button--hollow hover">Submit your application</button>
             </div>
         </div>
     </section>
@@ -75,11 +75,11 @@
 
             <div class="projects__pagination pagination">
                 <div class="pagination__inner">
-                    <div class="pagination__arrow"></div>
+                    <div class="pagination__arrow hover"></div>
                     <div class="pagination__bullet--active"></div>
-                    <div class="pagination__bullet"></div>
-                    <div class="pagination__bullet"></div>
-                    <div class="pagination__arrow"></div>
+                    <div class="pagination__bullet hover"></div>
+                    <div class="pagination__bullet hover"></div>
+                    <div class="pagination__arrow hover"></div>
                 </div>
             </div>
 
@@ -88,17 +88,17 @@
                     <li class="projects__list-element--active">
                         <a href="#" class="projects__link">Rostov-on-Don, Admiral</a>
                     </li>
-                    <li class="projects__list-element--inactive">
+                    <li class="projects__list-element--inactive hover">
                         <a href="#" class="projects__link">Sochi Thieves</a>
                     </li>
-                    <li class="projects__list-element--inactive">
+                    <li class="projects__list-element--inactive hover">
                         <a href="#" class="projects__link">Rostov-on-Don Patriotic</a>
                     </li>
                 </ul>
 
                 <div class="projects__photo">
-                    <button class="button photo-pagination"></button>
-                    <button class="button photo-pagination"></button>
+                    <button class="button photo-pagination hover"></button>
+                    <button class="button photo-pagination hover"></button>
                 </div>
             </div>
 
@@ -130,7 +130,7 @@
                         width="817" height="434" loading="lazy"
                 />
                 <div class="video__overlay overlay"></div>
-                <button class="video__play-button"></button>
+                <button class="video__play-button hover"></button>
             </div>
 
             <hr class="control__divider hairline">
@@ -155,7 +155,12 @@
                            placeholder="Your phone number:">
                 </div>
 
-                <button class="form__submit-button button--solid" type="submit">Submit</button>
+                <div class="form__button-wrapper">
+                    <button class="form__submit-button button--solid hover" type="submit">
+                        Submit
+                    </button>
+                    <div class="form__button-background"></div>
+                </div>
 
                 <div class="form__checkbox-wrapper">
                     <input id="personal-data" type="checkbox" class="form__checkbox checkbox" name="personal-data">
@@ -337,7 +342,7 @@
                     <label class="form__checkbox-label" for="personal-data_from_request_form">I agree to the processing
                         of personal data</label>
                 </div>
-                <button class="form__submit-button button--solid" type="submit">Submit</button>
+                <button class="form__submit-button button--solid hover" type="submit">Submit</button>
 
                 <div class="piggy-bank">
                     <img
@@ -373,16 +378,16 @@
                     wildest fantasies</h2>
                 <ul class="fantasies-styles__list">
                     <li class="fantasies-styles__list-element--selected">American classic</li>
-                    <li class="fantasies-styles__list-element">Empire</li>
-                    <li class="fantasies-styles__list-element">Classical</li>
-                    <li class="fantasies-styles__list-element">Loft</li>
-                    <li class="fantasies-styles__list-element">Minimalism</li>
-                    <li class="fantasies-styles__list-element">Provence</li>
-                    <li class="fantasies-styles__list-element">Romanticism</li>
-                    <li class="fantasies-styles__list-element">Scandinavian style</li>
-                    <li class="fantasies-styles__list-element">Mediterranean style</li>
-                    <li class="fantasies-styles__list-element">High tech</li>
-                    <li class="fantasies-styles__list-element">Eclecticism</li>
+                    <li class="fantasies-styles__list-element hover">Empire</li>
+                    <li class="fantasies-styles__list-element hover">Classical</li>
+                    <li class="fantasies-styles__list-element hover">Loft</li>
+                    <li class="fantasies-styles__list-element hover">Minimalism</li>
+                    <li class="fantasies-styles__list-element hover">Provence</li>
+                    <li class="fantasies-styles__list-element hover">Romanticism</li>
+                    <li class="fantasies-styles__list-element hover">Scandinavian style</li>
+                    <li class="fantasies-styles__list-element hover">Mediterranean style</li>
+                    <li class="fantasies-styles__list-element hover">High tech</li>
+                    <li class="fantasies-styles__list-element hover">Eclecticism</li>
                 </ul>
             </div>
 
@@ -588,7 +593,7 @@
                             data</label>
                     </div>
 
-                    <button class="form__submit-button button--solid" type="submit">Submit</button>
+                    <button class="form__submit-button button--solid hover" type="submit">Submit</button>
 
                 </form>
 
@@ -599,8 +604,8 @@
             </h3>
 
             <div class="social-links">
-                <a class="social-links__email" href="mailto:example@email.ru"></a>
-                <a class="social-links__instagram" href="https://instagram.com/"></a>
+                <a class="social-links__email hover" href="mailto:example@email.ru"></a>
+                <a class="social-links__instagram hover" href="https://instagram.com/"></a>
             </div>
 
             <div class="map-container">
@@ -616,15 +621,15 @@
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__element--active">Home</li>
-                    <li class="navigation__element">Projects</li>
-                    <li class="navigation__element">Measurement</li>
-                    <li class="navigation__element">Team</li>
-                    <li class="navigation__element">Reviews</li>
-                    <li class="navigation__element">Contacts</li>
+                    <li class="navigation__element hover">Projects</li>
+                    <li class="navigation__element hover">Measurement</li>
+                    <li class="navigation__element hover">Team</li>
+                    <li class="navigation__element hover">Reviews</li>
+                    <li class="navigation__element hover">Contacts</li>
                 </ul>
             </nav>
-            <span class="navigation-wrapper__phone">+7 (928) 768-32-39</span>
-            <button class="button--solid" type="button">Request a call</button>
+            <a href="tel:+79287683239" class="navigation-wrapper__phone hover">+7 (928) 768-32-39</a>
+            <button class="button--solid hover" type="button">Request a call</button>
         </div>
     </footer>
 

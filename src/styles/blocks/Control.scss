@@ -20,16 +20,6 @@
     @include flex-center();
     flex-direction: column;
     max-width: 817px;
-
-    //&:after {
-    //  content: '';
-    //  width: 100%;
-    //  height: 27%;
-    //  background-color: var(--color-dark);
-    //  position: absolute;
-    //  inset: 0;
-    //  z-index: -1;
-    //}
   }
 
   &__header {
@@ -116,6 +106,10 @@
         width: 100%;
         z-index: 1;
 
+        &__input-label, &__checkbox-label {
+          color: var(--color-white);
+        }
+
         &__input-wrapper, &__submit-button, {
           width: 100%;
         }
@@ -126,14 +120,20 @@
 
         &__input {
           border-bottom: 1px solid var(--color-white);
+          color: var(--color-white);
+
+          &:focus-visible {
+            border-bottom: 2px solid var(--color-gold);
+          }
 
           &::placeholder {
             color: var(--color-white);
           }
         }
 
-        &__submit-button {
+        &__button-wrapper {
           order: 2;
+          position: relative;
         }
 
         &__checkbox-wrapper {
@@ -149,20 +149,16 @@
           border: 1px solid var(--color-white);
         }
 
-        &__submit-button {
-          position: relative;
-
-          &:after {
-            content: '';
-            position: absolute;
-            z-index: -1;
-            width: 100vw;
-            height: 100%;
-            left: 50%;
-            top: 0;
-            transform: translate(-50%, 50%);;
-            background-color: var(--color-white);
-          }
+        &__button-background {
+          position: absolute;
+          z-index: -1;
+          width: 100vw;
+          height: 100%;
+          left: 50%;
+          top: 0;
+          opacity: 1;
+          transform: translate(-50%, 50%);;
+          background-color: var(--color-white);
         }
       }
     }

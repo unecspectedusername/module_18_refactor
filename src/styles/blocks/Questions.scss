@@ -71,6 +71,10 @@
       font-size: 20px;
     }
 
+    &__input {
+      color: var(--color-white);
+    }
+
     &__input::placeholder {
       color: white;
     }
