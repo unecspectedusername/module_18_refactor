@@ -5,6 +5,7 @@ import postcssPxToRem from "postcss-pxtorem";
 import path from 'node:path';
 
 export default defineConfig({
+    base: './',
     css: {
         postcss: {
             plugins: [
