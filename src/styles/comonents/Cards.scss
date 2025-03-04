@@ -21,7 +21,7 @@
   }
 
   &__client-photo {
-    @include  perfect-circle(76px)
+    @include perfect-circle(76px)
   }
 
   &__list {
@@ -29,7 +29,7 @@
     color: var(--color-grey);
     font-size: 13px;
     line-height: 204.6%;
-    padding-top: fluid(13,10);
+    padding-top: fluid(13, 10);
   }
 
   &__label-wrapper {
@@ -44,8 +44,8 @@
   }
 
   &__label {
-    padding-inline: fluid(22,16);
-    padding-block: fluid(17,12);
+    padding-inline: fluid(22, 16);
+    padding-block: fluid(17, 12);
     font-family: var(--font-family-serif);
     color: var(--color-white);
     background: var(--color-gold);

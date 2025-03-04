@@ -32,7 +32,7 @@
   &__overlay {
     @include absolute-center;
     opacity: 100%;
-    background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.9) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
   }
 }
 
@@ -109,7 +109,7 @@
   }
 
   .fantasies__wrapper {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .fantasies-styles__header {

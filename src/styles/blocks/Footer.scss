@@ -1,7 +1,7 @@
 @use '@/styles/helpers' as *;
 @use '@/styles/comonents/Navigation';
 
-$header-height: fluid(83,57);
+$header-height: fluid(83, 57);
 
 footer {
   background-color: var(--color-dark);

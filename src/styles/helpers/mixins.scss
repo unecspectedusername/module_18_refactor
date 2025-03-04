@@ -49,7 +49,7 @@
   aspect-ratio: 1;
 }
 
-@mixin hover ($hasActiveEffectOnMobile: true) {
+@mixin hover($hasActiveEffectOnMobile: true) {
   @media (any-hover: hover) {
     &:hover {
       @content

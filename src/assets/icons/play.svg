@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="22.4896mm" height="22.4896mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 2248.96 2248.96"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="22.4896mm" height="22.4896mm" version="1.1"
+     style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+     viewBox="0 0 2248.96 2248.96"
+>
  <defs>
   <style type="text/css">
    <![CDATA[
@@ -13,11 +13,11 @@ viewBox="0 0 2248.96 2248.96"
    ]]>
   </style>
  </defs>
- <g id="Слой_x0020_1">
+    <g id="Слой_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_105553153025088" filter="url(#filter0_d_1_11184)">
+        <g id="_105553153025088" filter="url(#filter0_d_1_11184)">
    <circle class="fil0" cx="1124.48" cy="1124.48" r="1124.48"/>
   </g>
-  <polygon class="fil1" points="1481.67,1137.71 926.04,1458.5 926.04,816.92 "/>
+        <polygon class="fil1" points="1481.67,1137.71 926.04,1458.5 926.04,816.92 "/>
  </g>
 </svg>

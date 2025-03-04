@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="4.7626mm" height="4.7626mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 460.42 460.42"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="4.7626mm" height="4.7626mm" version="1.1"
+     style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+     viewBox="0 0 460.42 460.42"
+>
  <defs>
   <style type="text/css">
    <![CDATA[
@@ -14,9 +14,9 @@ viewBox="0 0 460.42 460.42"
    ]]>
   </style>
  </defs>
- <g id="Слой_x0020_1">
+    <g id="Слой_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <rect class="fil0" x="0" y="0" width="460.41" height="460.41"/>
-  <polyline class="fil1 str0" points="354.17,141.66 208.07,287.75 141.67,221.35 "/>
+        <rect class="fil0" x="0" y="0" width="460.41" height="460.41"/>
+        <polyline class="fil1 str0" points="354.17,141.66 208.07,287.75 141.67,221.35 "/>
  </g>
 </svg>

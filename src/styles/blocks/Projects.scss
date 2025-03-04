@@ -2,15 +2,15 @@
 @use '../comonents/Photo-pagination';
 
 .projects {
-    background-color: var(--color-dark);
-    padding-block: 107px;
+  background-color: var(--color-dark);
+  padding-block: 107px;
 
-    &__wrapper {
-        max-width: 1171px;
-        display: grid;
-        grid-template-columns: 42% 58%;
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-areas:
+  &__wrapper {
+    max-width: 1171px;
+    display: grid;
+    grid-template-columns: 42% 58%;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
             "desc media"
             "desc media"
             "desc media"
@@ -19,171 +19,171 @@
             "prop media"
             "prop media"
             "pagination media"
+  }
+
+  &__description {
+    grid-area: desc;
+    padding-top: 70px;
+  }
+
+  &__header {
+    word-spacing: 100vw; // для вывода каждого слова с новой строки
+  }
+
+  &__subtitle {
+    padding-top: fluid(34, 22);
+    color: var(--color-white);
+    max-width: 80%;
+    line-height: 191%;
+    font-size: fluid(14, 11);
+  }
+
+  &__properties {
+    grid-area: prop;
+  }
+
+  &__pagination {
+    grid-area: pagination;
+  }
+
+  &__media {
+    grid-area: media;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 45px;
+  }
+
+  &__list-element {
+    font-family: var(--font-family-serif);
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 60px;
+    white-space: nowrap;
+
+    &--active {
+      @extend .projects__list-element;
+      color: var(--color-gold);
+      padding-bottom: 5px;
+      border-bottom: 1px solid var(--color-gold);
     }
 
-    &__description {
-        grid-area: desc;
-        padding-top: 70px;
+    &--inactive {
+      @extend .projects__list-element;
+      color: var(--color-white);
+      opacity: 30%;
     }
+  }
 
-    &__header {
-        word-spacing: 100vw; // для вывода каждого слова с новой строки
-    }
+  &__link {
 
-    &__subtitle {
-        padding-top: fluid(34,22);
-        color: var(--color-white);
-        max-width: 80%;
-        line-height: 191%;
-        font-size: fluid(14,11);
-    }
+  }
 
-    &__properties {
-        grid-area: prop;
-    }
-
-    &__pagination {
-        grid-area: pagination;
-    }
-
-    &__media {
-        grid-area: media;
-        display: flex;
-        flex-flow: column nowrap;
-    }
-
-    &__list {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 45px;
-    }
-
-    &__list-element {
-        font-family: var(--font-family-serif);
-        font-size: 14px;
-        text-transform: uppercase;
-        margin-right: 60px;
-        white-space: nowrap;
-
-        &--active {
-            @extend .projects__list-element;
-            color: var(--color-gold);
-            padding-bottom: 5px;
-            border-bottom: 1px solid var(--color-gold);
-        }
-
-        &--inactive {
-            @extend .projects__list-element;
-            color: var(--color-white);
-            opacity: 30%;
-        }
-    }
-
-    &__link {
-
-    }
-
-    &__photo {
-        height: 100%;
-        background: url("@images/project-photo.jpg") 50%/cover;
-        position: relative;
-    }
+  &__photo {
+    height: 100%;
+    background: url("@images/project-photo.jpg") 50%/cover;
+    position: relative;
+  }
 }
 
 @include tablet() {
 
-    .projects {
+  .projects {
 
-        padding-top: 0;
+    padding-top: 0;
 
-        &__wrapper, &__description {
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-        }
-
-        &__description, &__header {
-            text-align: center;
-        }
-
-        &__list, &__pagination {
-            @include visually-hidden();
-        }
-
-        &__description {
-            margin-bottom: 70px;
-            order: 1;
-        }
-
-        &__media {
-            order: 2;
-            width: 100%;
-        }
-
-        &__photo {
-            width: 100%;
-            aspect-ratio: 1.4;
-        }
-
-        &__properties {
-            order: 3;
-        }
+    &__wrapper, &__description {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
     }
+
+    &__description, &__header {
+      text-align: center;
+    }
+
+    &__list, &__pagination {
+      @include visually-hidden();
+    }
+
+    &__description {
+      margin-bottom: 70px;
+      order: 1;
+    }
+
+    &__media {
+      order: 2;
+      width: 100%;
+    }
+
+    &__photo {
+      width: 100%;
+      aspect-ratio: 1.4;
+    }
+
+    &__properties {
+      order: 3;
+    }
+  }
 
 }
 
 .properties {
 
-    width: 100%;
-    display: grid;
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  width: 100%;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 
-    &__card {
-        padding-top: fluid(34, 27);
-    }
+  &__card {
+    padding-top: fluid(34, 27);
+  }
 
-    &__header {
-        color: var(--color-gold);
-        font-size: fluid(18,14);
-    }
+  &__header {
+    color: var(--color-gold);
+    font-size: fluid(18, 14);
+  }
 
-    &__description {
-        white-space: pre-line;
-        color: var(--color-white);
-        font-size: fluid(13,11)
-    }
+  &__description {
+    white-space: pre-line;
+    color: var(--color-white);
+    font-size: fluid(13, 11)
+  }
 }
 
 .pagination {
 
+  display: flex;
+  align-items: end;
+
+  &__inner {
     display: flex;
-    align-items: end;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+  }
 
-    &__inner {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 18px;
+  &__arrow {
+    background: url("@icons/pagination-arrow.svg") 50%/cover;
+    width: 41px;
+    height: 13px;
+
+    &:last-child {
+      transform: rotate(180deg);
     }
+  }
 
-    &__arrow {
-        background: url("@icons/pagination-arrow.svg") 50%/cover;
-        width: 41px;
-        height: 13px;
+  &__bullet {
+    @include perfect-circle(10px);
+    background-color: var(--color-white);
+    opacity: 30%;
 
-        &:last-child {
-            transform: rotate(180deg);
-        }
+    &--active {
+      @extend .pagination__bullet;
+      opacity: 100%;
     }
-
-    &__bullet {
-        @include perfect-circle(10px);
-        background-color: var(--color-white);
-        opacity: 30%;
-
-        &--active {
-            @extend .pagination__bullet;
-            opacity: 100%;
-        }
-    }
+  }
 }

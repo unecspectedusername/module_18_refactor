@@ -41,8 +41,12 @@
   &__list {
     display: flex;
     flex-direction: row;
-    gap: fluid(47,1);
-    padding-inline: fluid(80,1)
+    gap: fluid(47, 1);
+    padding-inline: fluid(80, 1)
+  }
+
+  &__element, &__element--active {
+    cursor: pointer;
   }
 
   &__element--active {

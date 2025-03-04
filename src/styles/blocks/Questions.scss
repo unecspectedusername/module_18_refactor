@@ -2,7 +2,7 @@
 
 .questions {
 
-  & *:not(.questions__bottom-section-background), & *:not(.questions__bottom-section-overlay){
+  & *:not(.questions__bottom-section-background), & *:not(.questions__bottom-section-overlay) {
     z-index: 1;
   }
 
@@ -104,9 +104,11 @@
     & * {
       @include perfect-circle(28px)
     }
+
     &__email {
       background: url("@icons/email-icon.svg");
     }
+
     &__instagram {
       background: url("@icons/instagram-icon.svg");
     }
@@ -128,11 +130,12 @@
     transform: translate(-50%, -50%);
   }
 }
+
 @include mobile {
 
   .questions {
 
-    &__top-section,  &__bottom-section-background, &__bottom-section-overlay {
+    &__top-section, &__bottom-section-background, &__bottom-section-overlay {
       @include visually-hidden;
     }
 

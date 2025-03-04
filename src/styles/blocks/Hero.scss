@@ -3,7 +3,7 @@
 
 .hero {
   width: $full-width;
-  height: fluid(707,476);
+  height: fluid(707, 476);
   position: relative;
   color: var(--color-white);
   white-space: nowrap;
@@ -40,9 +40,9 @@
     max-width: 550px;
     line-height: 163.7%;
     text-wrap: pretty;
-    font-size: fluid(22,14);
+    font-size: fluid(22, 14);
     color: var(--color-white);
-    margin-block: fluid(19,16);
+    margin-block: fluid(19, 16);
   }
 
   &__button-wrapper {
@@ -76,6 +76,6 @@
           margin-bottom: 26px;
         }
       }
-  }
+    }
   }
 }
