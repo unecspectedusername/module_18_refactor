@@ -7,7 +7,7 @@
   font-size: 11px;
   text-transform: uppercase;
   color: var(--color-white);
-  @include flex-row-center();
+  @include flex-center(row);
   justify-content: space-between;
 
   button {

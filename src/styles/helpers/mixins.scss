@@ -4,11 +4,14 @@
   font-size: fluid($max, $min);
 }
 
-@mixin flex-center($isInline: false) {
-  @if ($isInline) {
-    display: inline-flex;
-  } @else {
-    display: flex;
+@mixin flex-center($direction: null) {
+
+  display: flex;
+
+  @if ($direction == row) {
+    flex-direction: row;
+  } @else if($direction == column) {
+    flex-direction: column;
   }
 
   justify-content: center;
@@ -64,3 +67,6 @@
   }
 }
 
+@mixin background($path) {
+  background: no-repeat url($path) 50% / cover;
+}

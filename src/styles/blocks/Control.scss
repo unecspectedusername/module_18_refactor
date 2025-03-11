@@ -8,6 +8,17 @@
 @use '../comonents/Button';
 @use 'sass:math';
 
+.control__header,
+.form__submit-button {
+  color: var(--color-white);
+}
+
+.control__text,
+.form {
+  color: var(--color-black);
+}
+
+
 .control {
 
   position: relative;
@@ -17,13 +28,8 @@
   @include flex-center();
 
   &__wrapper {
-    @include flex-center();
-    flex-direction: column;
+    @include flex-center(column);
     max-width: 817px;
-  }
-
-  &__header {
-    color: var(--color-white);
   }
 
   .video {
@@ -36,7 +42,6 @@
   }
 
   &__text {
-    color: var(--color-black);
     font-size: fluid(18, 11);
     text-align: center;
     padding-inline: 10%;
@@ -49,7 +54,6 @@
     flex-flow: row wrap;
     justify-content: center;
     gap: 49px;
-    color: var(--color-black);
 
     &__input-wrapper {
       order: 0;
@@ -59,7 +63,6 @@
       order: 1;
       width: 231px;
       height: 51px;
-      color: var(--color-white);
     }
 
     &__checkbox-wrapper {
@@ -99,13 +102,18 @@
 
 @include mobile {
 
+  .control__text,
+  .form__input-label,
+  .form__checkbox-label,
+  .form__input,
+  .form__input::placeholder {
+    color: var(--color-white);
+  }
+
+
   .control {
 
     background-color: var(--color-dark);
-
-    &__text {
-      color: var(--color-white);
-    }
 
     &__wrapper:after {
       height: 90%;
@@ -115,10 +123,6 @@
       flex-flow: column nowrap;
       width: 100%;
       z-index: 1;
-
-      &__input-label, &__checkbox-label {
-        color: var(--color-white);
-      }
 
       &__input-wrapper, &__submit-button, {
         width: 100%;
@@ -130,15 +134,11 @@
 
       &__input {
         border-bottom: 1px solid var(--color-white);
-        color: var(--color-white);
 
         &:focus-visible {
           border-bottom: 2px solid var(--color-gold);
         }
 
-        &::placeholder {
-          color: var(--color-white);
-        }
       }
 
       &__button-wrapper {

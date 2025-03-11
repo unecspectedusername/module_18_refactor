@@ -2,29 +2,30 @@
 @use '../comonents/Button';
 @use '../comonents/Form';
 
+.request__wrapper,
+.request__steps,
+.request__form,
+.form__input-wrapper,
+.form__input,
+.piggy-bank {
+  width: 100%;
+}
+
 .request {
   background: no-repeat url("@images/request_background.jpg") -10%;
   padding-top: 104px;
   padding-bottom: 54px;
   margin-bottom: 240px;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  @include flex-center();
 
   &__wrapper {
-    width: 100%;
     max-width: 1236px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: end;
     column-gap: 206px;
-  }
-
-  &__steps, &__form {
-    width: 100%;
   }
 
   &__steps {
@@ -60,8 +61,7 @@
   }
 
   .form {
-    @include flex-center();
-    flex-direction: column;
+    @include flex-center(column);
     background-color: var(--color-dark);
     color: var(--color-white);
     padding-inline: 49px;
@@ -74,10 +74,6 @@
       line-height: 143.2%;
       max-width: 60%;
       text-align: center;
-    }
-
-    &__input-wrapper, &__input {
-      width: 100%;
     }
 
     &__input-wrapper:nth-of-type(2) {
@@ -114,7 +110,6 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      width: 100%;
       max-width: 441px;
       column-gap: 25px;
       position: absolute;

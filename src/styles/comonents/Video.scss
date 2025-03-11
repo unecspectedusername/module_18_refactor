@@ -13,7 +13,7 @@
 
   &__play-button {
     @include perfect-circle(fluid(85, 34));
-    background: url('@icons/play.svg') 50% / cover;
+    @include background('@icons/play.svg');
     box-shadow: 0 5px 30px 0 rgba(var(--color-gold-rgb), 20%);
   }
 

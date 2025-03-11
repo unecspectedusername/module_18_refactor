@@ -3,6 +3,11 @@
 @use '../comonents/HairLine';
 @use '../comonents/Cards';
 
+.types__wrapper,
+.types__cards-wrapper {
+  width: 100%;
+}
+
 .types {
 
   @include flex-center();
@@ -13,10 +18,7 @@
   }
 
   &__wrapper {
-
-    @include flex-center();
-    flex-direction: column;
-    width: 100%;
+    @include flex-center(column);
     max-width: 1236px;
   }
 
@@ -25,10 +27,8 @@
   }
 
   &__cards-wrapper {
-    @include flex-center();
-    flex-direction: row;
+    @include flex-center(row);
     justify-content: space-between;
-    width: 100%;
     max-width: 1236px;
     gap: $container-inline-padding;
   }
@@ -36,10 +36,8 @@
 
 @include tablet {
 
-  .types {
-    &__cards-wrapper {
-      flex-direction: column;
-    }
+  .types__cards-wrapper {
+    flex-direction: column;
   }
 
   .card {

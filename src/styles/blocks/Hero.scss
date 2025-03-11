@@ -1,11 +1,16 @@
 @use 'Header' as *;
 @use '../helpers' as *;
 
+.hero,
+.hero__subtitle,
+.hero__header {
+  color: var(--color-white);
+}
+
 .hero {
   width: $full-width;
   height: fluid(707, 476);
   position: relative;
-  color: var(--color-white);
   white-space: nowrap;
   @include flex-center();
 
@@ -28,7 +33,6 @@
 
   &__header {
     font-family: var(--font-family-serif);
-    color: white;
     max-width: 550px;
 
     & span {
@@ -41,7 +45,6 @@
     line-height: 163.7%;
     text-wrap: wrap;
     font-size: fluid(22, 14);
-    color: var(--color-white);
     margin-block: fluid(19, 16);
   }
 
@@ -59,7 +62,6 @@
         box-shadow: 0 5px 15px 0 rgba(var(--color-gold-rgb), 30%);
       }
     }
-
 
     button {
       width: 207px;

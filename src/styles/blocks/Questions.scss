@@ -1,5 +1,15 @@
 @use '../helpers' as *;
 
+.questions__top-section,
+.questions__top-background,
+.questions__bottom-section-overlay,
+.questions__bottom-section-background,
+.questions__form-wrapper,
+.map-container {
+  width: 100%;
+}
+
+
 .questions {
 
   & *:not(.questions__bottom-section-background), & *:not(.questions__bottom-section-overlay) {
@@ -10,13 +20,11 @@
     display: flex;
     flex-direction: row;
     height: 466px;
-    width: 100%;
     opacity: 5%;
   }
 
   &__top-background {
     background: no-repeat url("@images/questions-top-section-background.svg");
-    width: 100%;
     height: 776px;
   }
 
@@ -26,12 +34,12 @@
 
   &__bottom-section-background, &__bottom-section-overlay {
     @include absolute-center();
-    width: 100%;
     height: 100%;
   }
 
   &__bottom-section-background {
-    background: url("@images/questions-bottom-section-background.png") 50% / cover;
+    @include background("@images/questions-bottom-section-background.png");
+    //background: url("@images/questions-bottom-section-background.png") 50% / cover;
     z-index: -1;
   }
 
@@ -43,15 +51,13 @@
   &__bottom-section {
     background-color: var(--color-dark);
     padding-inline: 18px;
-    @include flex-center();
-    flex-direction: column;
+    @include flex-center(column);
     position: relative;
     padding-top: 300px;
     padding-bottom: 65px;
   }
 
   &__form-wrapper {
-    width: 100%;
     max-width: 882px;
     @include flex-center();
     background: var(--color-dark);
@@ -115,7 +121,6 @@
   }
 
   .map-container {
-    width: 100%;
     max-width: 965px;
     filter: grayscale(1);
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 15%);
@@ -149,8 +154,7 @@
 
     .form {
       width: 100%;
-      @include flex-center();
-      flex-direction: column;
+      @include flex-center(column);
       row-gap: unset;
       order: 1;
 
