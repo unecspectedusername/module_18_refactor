@@ -53,30 +53,32 @@
     display: flex;
     flex-direction: row;
 
-    @include mobile-s {
-      flex-direction: column;
-    }
-
-    @include mobile-s-above {
-      .button--solid {
-        box-shadow: 0 5px 15px 0 rgba(var(--color-gold-rgb), 30%);
-      }
-    }
-
     button {
       width: 207px;
       height: 51px;
-      @include mobile-s-above {
-        &:first-of-type {
-          margin-right: 20px;
-        }
-      }
+    }
+  }
+}
 
-      @include mobile-s {
-        width: 100%;
-        &:first-of-type {
-          margin-bottom: 26px;
-        }
+@include mobile-s-above {
+  .hero__button-wrapper {
+    button:first-of-type {
+      margin-right: 20px;
+    }
+    .button--solid {
+      box-shadow: 0 5px 15px 0 rgba(var(--color-gold-rgb), 30%);
+    }
+  }
+}
+
+@include mobile-s {
+  .hero__button-wrapper {
+    flex-direction: column;
+
+    button {
+      width: 100%;
+      &:first-of-type {
+        margin-bottom: 26px;
       }
     }
   }

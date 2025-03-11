@@ -13,10 +13,6 @@
   button {
     padding-block: 12px;
     padding-inline: 34px;
-
-    @include tablet() {
-      @include visually-hidden();
-    }
   }
 
   &__phone, &__logo {
@@ -25,18 +21,10 @@
 
   &__phone {
     text-decoration: underline;
-    @include tablet() {
-      color: var(--color-white);
-      text-decoration: none;
-    }
   }
 }
 
 .navigation {
-
-  @include tablet() {
-    @include visually-hidden();
-  }
 
   &__list {
     display: flex;
@@ -51,5 +39,20 @@
 
   &__element--active {
     color: var(--color-gold);
+  }
+}
+
+@include tablet() {
+  .navigation-wrapper {
+    button {
+      @include visually-hidden();
+    }
+    &__phone {
+      color: var(--color-white);
+      text-decoration: none;
+    }
+  }
+  .navigation {
+    @include visually-hidden();
   }
 }

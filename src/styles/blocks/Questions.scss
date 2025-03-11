@@ -9,7 +9,6 @@
   width: 100%;
 }
 
-
 .questions {
 
   & *:not(.questions__bottom-section-background), & *:not(.questions__bottom-section-overlay) {
@@ -39,7 +38,6 @@
 
   &__bottom-section-background {
     @include background("@images/questions-bottom-section-background.png");
-    //background: url("@images/questions-bottom-section-background.png") 50% / cover;
     z-index: -1;
   }
 

@@ -10,7 +10,6 @@
 
   &:checked {
     @include background("@icons/checkbox.svg");
-    //background: url("@icon's/checkbox.svg") 50% / cover;'
     border: none;
   }
 }
