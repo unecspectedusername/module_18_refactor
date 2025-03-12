@@ -33,7 +33,6 @@
 
   &__bottom-section-background, &__bottom-section-overlay {
     @include absolute-center();
-    height: 100%;
   }
 
   &__bottom-section-background {

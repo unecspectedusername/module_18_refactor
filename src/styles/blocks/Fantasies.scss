@@ -36,7 +36,6 @@
   z-index: -1;
 
   &__image {
-    height: 100%;
     @include background("@images/fantasies_background.jpg");
   }
 
